@@ -543,7 +543,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tulip_
+      name: tulip_3
       rect:
         serializedVersion: 2
         x: 128
@@ -627,7 +627,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crop_Spritesheet_24
+      name: tomato_5
       rect:
         serializedVersion: 2
         x: 0
@@ -648,7 +648,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crop_Spritesheet_25
+      name: tomato_4
       rect:
         serializedVersion: 2
         x: 16
@@ -669,7 +669,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crop_Spritesheet_26
+      name: tomato_3
       rect:
         serializedVersion: 2
         x: 32
@@ -690,7 +690,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crop_Spritesheet_27
+      name: tomato_2
       rect:
         serializedVersion: 2
         x: 48
@@ -711,7 +711,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crop_Spritesheet_28
+      name: tomato_1
       rect:
         serializedVersion: 2
         x: 64
@@ -732,7 +732,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crop_Spritesheet_29
+      name: tomato_0
       rect:
         serializedVersion: 2
         x: 80
@@ -753,7 +753,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crop_Spritesheet_30
+      name: melon_5
       rect:
         serializedVersion: 2
         x: 96
@@ -774,7 +774,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crop_Spritesheet_31
+      name: melon_4
       rect:
         serializedVersion: 2
         x: 112
@@ -795,7 +795,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crop_Spritesheet_32
+      name: melon_3
       rect:
         serializedVersion: 2
         x: 128
@@ -816,7 +816,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crop_Spritesheet_33
+      name: melon_2
       rect:
         serializedVersion: 2
         x: 144
@@ -837,7 +837,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crop_Spritesheet_34
+      name: melon_1
       rect:
         serializedVersion: 2
         x: 160
@@ -858,7 +858,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crop_Spritesheet_35
+      name: melon_0
       rect:
         serializedVersion: 2
         x: 176
@@ -879,7 +879,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crop_Spritesheet_36
+      name: eggplant_5
       rect:
         serializedVersion: 2
         x: 0
@@ -900,7 +900,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crop_Spritesheet_37
+      name: eggplant_4
       rect:
         serializedVersion: 2
         x: 16
@@ -921,7 +921,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crop_Spritesheet_38
+      name: eggplant_3
       rect:
         serializedVersion: 2
         x: 32
@@ -942,7 +942,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crop_Spritesheet_39
+      name: eggplant_2
       rect:
         serializedVersion: 2
         x: 48
@@ -963,7 +963,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crop_Spritesheet_40
+      name: eggplant_1
       rect:
         serializedVersion: 2
         x: 64
@@ -984,7 +984,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crop_Spritesheet_41
+      name: eggplant_0
       rect:
         serializedVersion: 2
         x: 80
@@ -1005,7 +1005,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crop_Spritesheet_42
+      name: lemon_5
       rect:
         serializedVersion: 2
         x: 96
@@ -1026,7 +1026,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crop_Spritesheet_43
+      name: lemon_4
       rect:
         serializedVersion: 2
         x: 112
@@ -1047,7 +1047,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crop_Spritesheet_44
+      name: lemon_3
       rect:
         serializedVersion: 2
         x: 128
@@ -1068,7 +1068,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crop_Spritesheet_45
+      name: lemon_2
       rect:
         serializedVersion: 2
         x: 144
@@ -1089,7 +1089,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crop_Spritesheet_46
+      name: lemon_1
       rect:
         serializedVersion: 2
         x: 160
@@ -1110,7 +1110,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Crop_Spritesheet_47
+      name: lemon_0
       rect:
         serializedVersion: 2
         x: 176
@@ -2673,30 +2673,6 @@ TextureImporter:
       Crop_Spritesheet_117: 128234073
       Crop_Spritesheet_118: -1319157286
       Crop_Spritesheet_119: -1014161424
-      Crop_Spritesheet_24: -2101110462
-      Crop_Spritesheet_25: -2055384321
-      Crop_Spritesheet_26: -304331489
-      Crop_Spritesheet_27: -1112197103
-      Crop_Spritesheet_28: 1099567567
-      Crop_Spritesheet_29: -1841220209
-      Crop_Spritesheet_30: 921580190
-      Crop_Spritesheet_31: 1348117071
-      Crop_Spritesheet_32: -1350525365
-      Crop_Spritesheet_33: -1191768976
-      Crop_Spritesheet_34: -1943992953
-      Crop_Spritesheet_35: -1286498939
-      Crop_Spritesheet_36: -184584366
-      Crop_Spritesheet_37: -1643475459
-      Crop_Spritesheet_38: 1408388147
-      Crop_Spritesheet_39: 1413685041
-      Crop_Spritesheet_40: -727692247
-      Crop_Spritesheet_41: -126472495
-      Crop_Spritesheet_42: 1451917332
-      Crop_Spritesheet_43: 2124412542
-      Crop_Spritesheet_44: -805810838
-      Crop_Spritesheet_45: 1547930736
-      Crop_Spritesheet_46: -535587565
-      Crop_Spritesheet_47: 1564715453
       Crop_Spritesheet_48: 1437799951
       Crop_Spritesheet_49: -1171976859
       Crop_Spritesheet_50: -688346665
@@ -2755,16 +2731,40 @@ TextureImporter:
       cucumber_3: -1931234014
       cucumber_4: 1125490161
       cucumber_5: 2071427752
+      eggplant_0: -126472495
+      eggplant_1: -727692247
+      eggplant_2: 1413685041
+      eggplant_3: 1408388147
+      eggplant_4: -1643475459
+      eggplant_5: -184584366
+      lemon_0: 1564715453
+      lemon_1: -535587565
+      lemon_2: 1547930736
+      lemon_3: -805810838
+      lemon_4: 2124412542
+      lemon_5: 1451917332
+      melon_0: -1286498939
+      melon_1: -1943992953
+      melon_2: -1191768976
+      melon_3: -1350525365
+      melon_4: 1348117071
+      melon_5: 921580190
       rose_0: -1533702607
       rose_1: -331130509
       rose_2: -1853777105
       rose_3: -2118542971
       rose_4: 1681194563
       rose_5: -1772586631
-      tulip_: 1946757329
+      tomato_0: -1841220209
+      tomato_1: 1099567567
+      tomato_2: -1112197103
+      tomato_3: -304331489
+      tomato_4: -2055384321
+      tomato_5: -2101110462
       tulip_0: -661278306
       tulip_1: 1432499444
       tulip_2: 515045491
+      tulip_3: 1946757329
       tulip_4: 1936260261
       tulip_5: -1981145086
       turnip_0: 845396669
