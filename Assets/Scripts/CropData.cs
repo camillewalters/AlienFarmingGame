@@ -11,4 +11,5 @@ public class CropData : ScriptableObject
 
     public int purchasePrice;
     public int sellPrice;
+    public int daysToHarvest = 3;
 }
