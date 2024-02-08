@@ -73,6 +73,7 @@ public class TileController : MonoBehaviour
 
     void OnNewDay()
     {
+        Debug.Log("New day for this tile");
         if (!HasCrop())
         {
             tilled = false;

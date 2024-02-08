@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     public int Inventory;
 
     public static GameManager Instance;
-    public event UnityAction onNewDay; //TODO: implement when this is changed
+    public event UnityAction onNewDay; //TODO: implement when this is changed (right now its a button)
 
     void Awake()
     {
@@ -63,6 +63,14 @@ public class GameManager : MonoBehaviour
     // Called when the buy crop button is pressed.
     public void OnBuyCropButton(CropData crop)
     {
+
+    }
+
+    public void RaiseNewDayEvent()
+    {
+        Debug.Log("raise new day event");
+
+        onNewDay?.Invoke();
 
     }
 }
