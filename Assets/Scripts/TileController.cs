@@ -44,8 +44,10 @@ public class TileController : MonoBehaviour
 
     public void Till()
     {
+        Debug.Log("till");//Camille: for some reason this isnt hitting from the button currently
         tilled = true;
         spriteRenderer.sprite = tilledSprite;
+        Debug.Log(spriteRenderer.sprite.name);
     }
 
     void Water()
