@@ -8,11 +8,20 @@ public class TileController : MonoBehaviour
 {
     bool tilled = false;
     SpriteRenderer spriteRenderer;
-    Sprite wateredTilledSprite;
-    Sprite tilledSprite;
-    Sprite grassSprite;
+    public Sprite wateredTilledSprite;
+    public Sprite tilledSprite;
+    public Sprite grassSprite;
     Crop curCrop;
 
+
+    public void Awake()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        if (spriteRenderer == null)
+        {
+            Debug.Log("cannot find the sprite renderer");
+        }
+    }
     public void Interact()
     {
         if (!tilled)
@@ -33,7 +42,7 @@ public class TileController : MonoBehaviour
         }
     }
 
-    void Till()
+    public void Till()
     {
         tilled = true;
         spriteRenderer.sprite = tilledSprite;
@@ -55,6 +64,7 @@ public class TileController : MonoBehaviour
 
     public void PlantNewCrop(CropData cropData)
     {
+        Debug.Log("planting a crop");
         if (!tilled)
         {
             return;
@@ -62,7 +72,7 @@ public class TileController : MonoBehaviour
         //TODO:
         //curCrop = Instantiate(cropPrefab, transform).GetComponent<Crop>();
         //curCrop.Plant(cropData)
-        GameManager.Instance.onNewDay += OnNewDay;
+        GameManager.Instance.onNewDay += OnNewDay;//this is not being called right now because i never subscribed
 
     }
 
@@ -85,5 +95,10 @@ public class TileController : MonoBehaviour
             spriteRenderer.sprite = tilledSprite;
             curCrop.NewDay();
         }
+    }
+
+    private void OnDestroy()
+    {
+        GameManager.Instance.onNewDay -= OnNewDay;
     }
 }

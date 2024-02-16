@@ -26,6 +26,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    // Property to check if the event is subscribed
+    public bool IsOnNewDayEventSubscribed
+    {
+        get { return onNewDay != null; }
+    }
+
     void OnEnable()
     {
         Crop.onPlantCrop += OnPlantCrop;
