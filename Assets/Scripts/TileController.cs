@@ -14,7 +14,7 @@ public class TileController : MonoBehaviour
     Crop curCrop;
 
 
-    public void Awake()
+    public void Awake()//I'm not sure if this needs to be in Awake or Enable because I don't necessarily need to do it all the time?
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         if (spriteRenderer == null)
@@ -44,7 +44,7 @@ public class TileController : MonoBehaviour
 
     public void Till()
     {
-        Debug.Log("till");//Camille: for some reason this isnt hitting from the button currently
+        Debug.Log("till");
         tilled = true;
         spriteRenderer.sprite = tilledSprite;
         Debug.Log(spriteRenderer.sprite.name);
