@@ -6,7 +6,7 @@ using UnityEngine.Events;
 
 public class Crop : MonoBehaviour
 {
-    private CropData curCrop;
+    private CropData curCropData;
     private int m_DayPlanted;
     private int m_DaysSinceLastWatered;
 
@@ -17,7 +17,7 @@ public class Crop : MonoBehaviour
 
     public void Plant(CropData crop)
     {
-        curCrop = crop;
+        curCropData = crop;
         m_DayPlanted = GameManager.Instance.CurrentDay;
         m_DaysSinceLastWatered = 0;
         UpdateSprite();
@@ -39,7 +39,7 @@ public class Crop : MonoBehaviour
     /// <returns></returns>
     public bool CanHarvest()
     {
-        return CropProgress() > curCrop.daysToGrow;
+        return CropProgress() > curCropData.daysToGrow;
     }
 
     /// <summary>
@@ -57,8 +57,8 @@ public class Crop : MonoBehaviour
     {
         if (CanHarvest())
         {
-            onHarvestCrop?.Invoke(curCrop);
-            Destroy(curCrop);
+            onHarvestCrop?.Invoke(curCropData);
+            Destroy(curCropData);
         }
     }
 
@@ -66,13 +66,13 @@ public class Crop : MonoBehaviour
     {
         int progress = CropProgress();
 
-        if (progress < curCrop.daysToGrow)
+        if (progress < curCropData.daysToGrow)
         {
-            SpriteRenderer.sprite = curCrop.growProgressSprites[progress];//TODO: change this algorithm for difference btwn array length and days to grow
+            SpriteRenderer.sprite = curCropData.growProgressSprites[progress];//TODO: change this algorithm for difference btwn array length and days to grow
         }
         else
         {
-            SpriteRenderer.sprite = curCrop.readyToHarvestSprite;
+            SpriteRenderer.sprite = curCropData.readyToHarvestSprite;
         }
     }
 
@@ -80,7 +80,7 @@ public class Crop : MonoBehaviour
     {
         m_DaysSinceLastWatered++;
 
-        if(m_DaysSinceLastWatered > curCrop.daysToHarvest)
+        if(m_DaysSinceLastWatered > curCropData.daysToHarvest)
         {
             Destroy(gameObject);
         }

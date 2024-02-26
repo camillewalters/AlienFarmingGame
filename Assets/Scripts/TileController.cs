@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
@@ -12,6 +13,7 @@ public class TileController : MonoBehaviour
     public Sprite tilledSprite;
     public Sprite grassSprite;
     Crop curCrop;
+    public ICropFactory cropFactory;
 
 
     public void Awake()//I'm not sure if this needs to be in Awake or Enable because I don't necessarily need to do it all the time?
@@ -42,15 +44,14 @@ public class TileController : MonoBehaviour
         }
     }
 
-    public void Till()
+    public void Till()//TODO: make private
     {
         Debug.Log("till");
         tilled = true;
         spriteRenderer.sprite = tilledSprite;
-        Debug.Log(spriteRenderer.sprite.name);
     }
 
-    void Water()
+    public void Water()//TODO: make private 
     {
         if (HasCrop())
         {
@@ -71,9 +72,15 @@ public class TileController : MonoBehaviour
         {
             return;
         }
+        var cropPrefab = Resources.Load("CropPrefab");
         //TODO:
-        //curCrop = Instantiate(cropPrefab, transform).GetComponent<Crop>();
-        //curCrop.Plant(cropData)
+        //if(!cropFactory.CreateCrop(cropData).TryGetComponent<Crop>(out curCrop))
+        //{
+        //    Debug.LogError("There is no Crop component assigned to this prefab.");
+        //}
+        //curCrop = Instantiate(CropFactory.Instance.CreateCrop(cropData),transform).GetComponent<Crop>();
+        curCrop = Instantiate(cropPrefab, transform).GetComponent<Crop>();
+        curCrop.Plant(cropData);
         GameManager.Instance.onNewDay += OnNewDay;//this is not being called right now because i never subscribed
 
     }

@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ee03d227e8668424d96cc26da386713a, type: 3}
-  m_Name: Wheat
+  m_Name: Crop Data
   m_EditorClassIdentifier: 
-  cropName: Wheat
-  daysToGrow: 2
+  cropName: 
+  daysToGrow: 0
   growProgressSprites: []
   readyToHarvestSprite: {fileID: 0}
-  purchasePrice: 35
-  sellPrice: 50
+  purchasePrice: 0
+  sellPrice: 0
   daysToHarvest: 3
