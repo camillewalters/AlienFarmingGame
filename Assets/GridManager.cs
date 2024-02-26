@@ -6,9 +6,9 @@ using UnityEngine;
 public class GridManager : MonoBehaviour
 {
     [SerializeField]
-    private int rows = 5;
+    private int rows = 10;
     [SerializeField]
-    private int cols = 8;
+    private int cols = 10;
     [SerializeField]
     private float tileSize = 1;
   
