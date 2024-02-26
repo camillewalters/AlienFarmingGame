@@ -1455,9 +1455,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaf70986623c2de45a85d16e7106ed6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wateredTilledSprite: {fileID: 0}
-  tilledSprite: {fileID: 21300000, guid: 8bccf8b318b788e4da3ac3135a365762, type: 3}
-  grassSprite: {fileID: 21300000, guid: 4def3ffbcf8d4e34f9b3731765deb0e1, type: 3}
+  wateredTilledSprite: {fileID: 21300000, guid: a38dd0c075da0b54bb334e1292b1cdf5, type: 3}
+  tilledSprite: {fileID: 21300000, guid: 999596c998e1bcb4a90df899b0408ff6, type: 3}
+  grassSprite: {fileID: 21300000, guid: d4061831d45575a499f9cc16bf636d2d, type: 3}
 --- !u!212 &1757907089
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1499,7 +1499,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1437799951, guid: 9daa38408fecbcf4ebce1670e802e6df, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d4061831d45575a499f9cc16bf636d2d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
