@@ -81,6 +81,7 @@ public class TileController : MonoBehaviour
         //curCrop = Instantiate(CropFactory.Instance.CreateCrop(cropData),transform).GetComponent<Crop>();
         curCrop = Instantiate(cropPrefab, transform).GetComponent<Crop>();
         curCrop.Plant(cropData);
+        spriteRenderer.sprite = null;
         GameManager.Instance.onNewDay += OnNewDay;//this is not being called right now because i never subscribed
 
     }

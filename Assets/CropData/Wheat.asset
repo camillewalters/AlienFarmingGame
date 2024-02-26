@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cropName: Wheat
   daysToGrow: 2
-  growProgressSprites: []
+  growProgressSprites:
+  - {fileID: 0}
   readyToHarvestSprite: {fileID: 0}
   purchasePrice: 35
   sellPrice: 50

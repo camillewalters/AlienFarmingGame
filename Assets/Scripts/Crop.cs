@@ -10,7 +10,7 @@ public class Crop : MonoBehaviour
     private int m_DayPlanted;
     private int m_DaysSinceLastWatered;
 
-    public SpriteRenderer SpriteRenderer;
+    public SpriteRenderer sr;
 
     public static event UnityAction<CropData> onPlantCrop;
     public static event UnityAction<CropData> onHarvestCrop;
@@ -22,6 +22,11 @@ public class Crop : MonoBehaviour
         m_DaysSinceLastWatered = 0;
         UpdateSprite();
         onPlantCrop?.Invoke(crop);
+    }
+
+    public void OnEnable()
+    {
+        sr = gameObject.AddComponent<SpriteRenderer>();
     }
 
     /// <summary>
@@ -64,15 +69,19 @@ public class Crop : MonoBehaviour
 
     void UpdateSprite()
     {
+        if (sr == null)
+        {
+            sr = new SpriteRenderer();
+        }
         int progress = CropProgress();
 
         if (progress < curCropData.daysToGrow)
         {
-            SpriteRenderer.sprite = curCropData.growProgressSprites[progress];//TODO: change this algorithm for difference btwn array length and days to grow
+            sr.sprite = curCropData.growProgressSprites[progress];//TODO: change this algorithm for difference btwn array length and days to grow
         }
         else
         {
-            SpriteRenderer.sprite = curCropData.readyToHarvestSprite;
+            sr.sprite = curCropData.readyToHarvestSprite;
         }
     }
 

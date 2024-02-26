@@ -257,54 +257,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 232543486}
   m_CullTransparentMesh: 1
---- !u!1 &338345627
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 338345629}
-  - component: {fileID: 338345628}
-  m_Layer: 0
-  m_Name: CropManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &338345628
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 338345627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cae8279d0451d9248b0842a05923ad38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  crop1: {fileID: 0}
-  crop1Prefab: {fileID: 0}
-  crop2: {fileID: 0}
-  crop2Prefab: {fileID: 0}
---- !u!4 &338345629
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 338345627}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &363802976
 GameObject:
   m_ObjectHideFlags: 0
@@ -809,7 +761,7 @@ GameObject:
   - component: {fileID: 1332838341}
   - component: {fileID: 1332838340}
   m_Layer: 5
-  m_Name: Interact With Tile Button
+  m_Name: Plant a Crop Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -884,7 +836,7 @@ MonoBehaviour:
         m_MethodName: PlantNewCrop
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: b809744149e07424ab0ed75bab5fea47, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: 96043041a1e8a1a4792140a071fa28d0, type: 2}
           m_ObjectArgumentAssemblyTypeName: CropData, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -1802,4 +1754,3 @@ SceneRoots:
   - {fileID: 1191514543}
   - {fileID: 1757907090}
   - {fileID: 393280278}
-  - {fileID: 338345629}
