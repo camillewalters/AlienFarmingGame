@@ -75,7 +75,7 @@ public class GameManager : MonoBehaviour
     public void RaiseNewDayEvent()
     {
         Debug.Log("raise new day event");
-
+        CurrentDay++;
         onNewDay?.Invoke();
 
     }

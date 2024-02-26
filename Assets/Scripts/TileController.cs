@@ -102,7 +102,7 @@ public class TileController : MonoBehaviour
         }
         else
         {
-            spriteRenderer.sprite = tilledSprite;
+            //spriteRenderer.sprite = tilledSprite;
             curCrop.NewDay();
         }
     }

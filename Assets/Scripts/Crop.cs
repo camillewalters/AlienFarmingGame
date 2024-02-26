@@ -35,6 +35,8 @@ public class Crop : MonoBehaviour
     /// <returns></returns>
     int CropProgress()
     {
+        Debug.Log(GameManager.Instance.CurrentDay);
+        Debug.Log(m_DayPlanted);
         return GameManager.Instance.CurrentDay - m_DayPlanted;
     }
 
@@ -74,6 +76,7 @@ public class Crop : MonoBehaviour
             sr = new SpriteRenderer();
         }
         int progress = CropProgress();
+        Debug.Log("Progress: " + progress);
 
         if (progress < curCropData.daysToGrow)
         {
