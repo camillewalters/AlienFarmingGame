@@ -33,4 +33,9 @@ public class PlayerController : MonoBehaviour
     {
         rb.velocity = new Vector2(moveDirection.x *moveSpeed, moveDirection.y *moveSpeed);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("triggered!");
+    }
 }

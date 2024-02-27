@@ -14,6 +14,7 @@ public class TileController : MonoBehaviour
     public Sprite grassSprite;
     Crop curCrop;
     public ICropFactory cropFactory;
+    private Rigidbody2D rb;
 
 
     public void Awake()//I'm not sure if this needs to be in Awake or Enable because I don't necessarily need to do it all the time?
@@ -23,6 +24,12 @@ public class TileController : MonoBehaviour
         {
             Debug.Log("cannot find the sprite renderer");
         }
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("I got collided with");
     }
     public void Interact()
     {
