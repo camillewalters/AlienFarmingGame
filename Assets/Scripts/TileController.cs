@@ -15,6 +15,7 @@ public class TileController : MonoBehaviour
     Crop curCrop;
     public ICropFactory cropFactory;
     private Rigidbody2D rb;
+    CropData testCropData;//temp, remove once line 40 is re-implemented. 
 
 
     public void Awake()//I'm not sure if this needs to be in Awake or Enable because I don't necessarily need to do it all the time?
@@ -25,6 +26,7 @@ public class TileController : MonoBehaviour
             Debug.Log("cannot find the sprite renderer");
         }
         rb = GetComponent<Rigidbody2D>();
+        testCropData = Resources.Load<CropData>("Turnip");
     }
 
     public void Interact()
@@ -35,7 +37,8 @@ public class TileController : MonoBehaviour
         }
         else if (!HasCrop() && GameManager.Instance.CanPlantCrop())
         {
-            PlantNewCrop(GameManager.Instance.SelectedCropToPlant);
+            //PlantNewCrop(GameManager.Instance.SelectedCropToPlant);//TODO: change back to this line once SelectedCropToPlant is implemented            
+            PlantNewCrop(testCropData);
         }
         else if (HasCrop() && curCrop.CanHarvest())
         {
@@ -125,16 +128,16 @@ public class TileController : MonoBehaviour
         gameObject.transform.localScale = Vector3.one;
     }
 
-    public void Update()
-    {
-        //This should not be done like this. I should subscribe to events instead.
-        if (gameObject== GameManager.Instance.SelectedTile)
-        {
-            MakeLarger();
-        }
-        else
-        {
-            ReturnToNormalSize();
-        }
-    }
+    //public void Update()
+    //{
+    //    //This should not be done like this. I should subscribe to events instead.
+    //    if (gameObject== GameManager.Instance.SelectedTile)
+    //    {
+    //        MakeLarger();
+    //    }
+    //    else
+    //    {
+    //        ReturnToNormalSize();
+    //    }
+    //}
 }

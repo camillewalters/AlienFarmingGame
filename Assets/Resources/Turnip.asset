@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee03d227e8668424d96cc26da386713a, type: 3}
+  m_Name: Turnip
+  m_EditorClassIdentifier: 
+  cropName: Turnip
+  daysToGrow: 5
+  growProgressSprites:
+  - {fileID: 845396669, guid: 9daa38408fecbcf4ebce1670e802e6df, type: 3}
+  - {fileID: 394938704, guid: 9daa38408fecbcf4ebce1670e802e6df, type: 3}
+  - {fileID: -1561052568, guid: 9daa38408fecbcf4ebce1670e802e6df, type: 3}
+  - {fileID: 1489898610, guid: 9daa38408fecbcf4ebce1670e802e6df, type: 3}
+  - {fileID: 199286226, guid: 9daa38408fecbcf4ebce1670e802e6df, type: 3}
+  readyToHarvestSprite: {fileID: -1060328939, guid: 9daa38408fecbcf4ebce1670e802e6df, type: 3}
+  purchasePrice: 0
+  sellPrice: 0
+  daysToHarvest: 3

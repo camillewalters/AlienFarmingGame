@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     public int CurrentDay;
     public int Money;
     public CropData SelectedCropToPlant;
-    public int Inventory;
+    public int Inventory = 5;//TODO: implement this properly
     public GameObject SelectedTile;
 
     public static GameManager Instance;
@@ -65,7 +65,8 @@ public class GameManager : MonoBehaviour
     // Do we have enough crops to plant?
     public bool CanPlantCrop()
     {
-        return Inventory > 0;
+        //return Inventory > 0;
+        return true;
     }
     // Called when the buy crop button is pressed.
     public void OnBuyCropButton(CropData crop)
