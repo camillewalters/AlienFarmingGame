@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public int Money;
     public CropData SelectedCropToPlant;
     public int Inventory;
+    public GameObject SelectedTile;
 
     public static GameManager Instance;
     public event UnityAction onNewDay; //TODO: implement when this is changed (right now its a button)

@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     public void Fire(InputAction.CallbackContext context)
     {
         Debug.Log("Fire!");//Call Interact on the closest tile instead
+        GameManager.Instance.SelectedTile.GetComponent<TileController>().Interact();
     }
 
     private void Update()
@@ -36,6 +37,15 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("triggered!");
+        //Debug.Log("Collided with" + collision.name);
+        GameManager.Instance.SelectedTile = collision.gameObject;
+        collision.gameObject.GetComponent<TileController>().MakeLarger();
     }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+       // Debug.Log("Exited collsion with" + collision.name);
+        collision.gameObject.GetComponent<TileController>().ReturnToNormalSize();
+    }
+
 }

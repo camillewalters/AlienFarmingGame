@@ -25,8 +25,8 @@ public class GridManager : MonoBehaviour
         {
             for (int j = 0; j < cols; j++)
             {
-                GameObject tile = (GameObject)Instantiate(referenceTile, transform);
-
+                GameObject tile = Instantiate(referenceTile, transform);
+                tile.name = "Tile: " + i.ToString() + "_" + j.ToString();
                 float posX = j * tileSize;
                 float posY = i * tileSize;
 

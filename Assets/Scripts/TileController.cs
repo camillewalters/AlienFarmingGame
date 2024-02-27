@@ -27,10 +27,6 @@ public class TileController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        Debug.Log("I got collided with");
-    }
     public void Interact()
     {
         if (!tilled)
@@ -117,5 +113,28 @@ public class TileController : MonoBehaviour
     private void OnDestroy()
     {
         GameManager.Instance.onNewDay -= OnNewDay;
+    }
+    
+    public void MakeLarger()
+    {
+        gameObject.transform.localScale = new Vector3(1.2f, 1.2f, 0f);
+    }
+
+    public void ReturnToNormalSize()
+    {
+        gameObject.transform.localScale = Vector3.one;
+    }
+
+    public void Update()
+    {
+        //This should not be done like this. I should subscribe to events instead.
+        if (gameObject== GameManager.Instance.SelectedTile)
+        {
+            MakeLarger();
+        }
+        else
+        {
+            ReturnToNormalSize();
+        }
     }
 }
